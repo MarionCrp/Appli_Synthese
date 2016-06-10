@@ -100,7 +100,6 @@ class MatchChampionnatManager extends Manager {
 				'buts_equipe_domicile' => $buts_equipe_domicile,
 				'id_match_championnat' => $id_match_championnat
 				));
-			var_dump($buts_equipe_visiteur, $buts_equipe_domicile);
 				
 			if (!$q) throw new Exception("Erreur lors de l'ajout des résultats");
 			else echo ('<p class="success">Les résultats du match  ont été mis à jour </p>');	

@@ -416,11 +416,10 @@ class Random extends Manager{
 
 	public function generer_score_aleatoire($champ){
 		$match_championnat_manager = new MatchChampionnatManager($this->pdo);
-		$matchs = $match_championnat_manager->getAllMatchChampionnats();
+		$matchs = $match_championnat_manager->getAllMatchChampionnats($champ->id_championnat());
 		foreach($matchs as $match){
 			$score1 = $this->ScoreRandom();
 			$score2 = $this->ScoreRandom();
-			var_dump($match,$score1, $score2);
 			$match_championnat_manager->ajoutResultat($match->id_match_championnat(), (int) $score1, (int) $score2);
 		}
 	}
