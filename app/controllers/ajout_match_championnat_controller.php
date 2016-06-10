@@ -1,35 +1,20 @@
 <?php
 
-	$saisons = [];
-	$pays = [];
-	$divisions = [];
-	
-	foreach ($saison_manager->getAllSaisons() as $saison) {
-		$saisons[] = array(
-			'id' => $saison->id_saison(),
-			'libelle' => $saison->libelle_saison()
-		);
-	}
+if(isset($_POST['saison']) && isset($_POST['pays']) && isset($_POST['division'])){
+	$saison = htmlspecialchars($_POST['saison']);
+	$pays = htmlspecialchars($_POST['pays']);
+	$division = htmlspecialchars($_POST['division']);
 
-	foreach ($pays_manager->getAllPays() as $un_pays) {
-		$pays[] = array(
-			'id' => $un_pays->id_pays(),
-			'libelle' => $un_pays->libelle_pays()
-		);
-	}
+	$_SESSION['saison'] = $saison;
+	$_SESSION['pays'] = $pays;
+	$_SESSION['division'] = $division;
 
-	foreach ($division_manager->getAllDivisions() as $division) {
-		$divisions[] = array(
-			'id' => $division->id_division(),
-			'libelle' => $division->libelle_division()
-		);
-	}
-
-
-	$smarty->assign("saisons", $saisons);
+	$smarty->assign("saison", $saison);
 	$smarty->assign("pays", $pays);
-	$smarty->assign("divisions", $divisions);
-
+	$smarty->assign("division", $division);
 	$smarty->display('ajout_match_championnat.tpl');
+	
+} else {
 
-?>
+	header('Location: selection_championnat_controller.php');
+}

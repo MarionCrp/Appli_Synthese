@@ -42,7 +42,7 @@ class MatchChampionnatManager extends Manager {
 				'id_equipe_visiteur' => $data['id_equipe_visiteur'],
 				'id_equipe_domicile' => $data['id_equipe_domicile'],
 				'id_championnat' => $data['id_championnat'],
-				'date_match_championnat' => $data['libelle_championnat'],
+				'date_match_championnat' => $data['date_match_championnat'],
 				'buts_equipe_visiteur' => $data['buts_equipe_visiteur'],
 				'buts_equipe_domicile' => $data['buts_equipe_domicile'],
 				'id_arbitre1' => $data['id_arbitre1'],
@@ -57,20 +57,20 @@ class MatchChampionnatManager extends Manager {
 
 	public function ajoutMatch($id_equipe_domicile, $id_equipe_visiteur, $id_championnat, $date_match_championnat, $arbitres){
 		$req = $this->pdo->prepare('INSERT INTO AS_match_championnat 
-			(id_equipe_visiteur, id_equipe_domicile, id_championnat, date_match_championnat, buts_equipe_visiteur, buts_equipe_domicile, 
+			(id_equipe_visiteur, id_equipe_domicile, id_championnat, date_match_championnat,  
 			id_arbitre1, id_arbitre2, id_arbitre3, id_arbitre4, id_remplacant) 
-	 VALUES (:id_equipe_visiteur, :id_equipe_domicile, :id_championnat, :date_match_championnat, :buts_equipe_visiteur, :buts_equipe_domicile, 
+	 VALUES (:id_equipe_visiteur, :id_equipe_domicile, :id_championnat, :date_match_championnat, 
 			:id_arbitre1, :id_arbitre2, :id_arbitre3, :id_arbitre4, :id_remplacant)');
 		$req->execute(array(
-				'id_equipe_visiteur' => $id_equipe_domicile,
+				'id_equipe_visiteur' => $id_equipe_visiteur,
 				'id_equipe_domicile' => $id_equipe_domicile,
 				'id_championnat' => $id_championnat,
 				'date_match_championnat' => $date_match_championnat,
-				'id_arbitre1' => $id_arbitre1,
-				'id_arbitre2' => $id_arbitre2,
-				'id_arbitre3' => $id_arbitre3,
-				'id_arbitre4' => $id_arbitre4,
-				'id_remplacant' => $id_remplacant
+				'id_arbitre1' => $arbitres[0],
+				'id_arbitre2' => $arbitres[1],
+				'id_arbitre3' => $arbitres[2],
+				'id_arbitre4' => $arbitres[3],
+				'id_remplacant' => $arbitres[4]
 		));
 		
 		if (!$req) throw new Exception("Erreur lors de l'ajout du match");
@@ -79,7 +79,7 @@ class MatchChampionnatManager extends Manager {
 	
 	public function ajoutResultat($id_match_championnat, $buts_equipe_visiteur, $buts_equipe_domicile){
 		// On vérifie si l'entrée complète est déjà en base de données ou non
-		$q = $this->_db->prepare('SELECT COUNT(*) as nb FROM AS_match_championnat
+		$q = $this->pdo->prepare('SELECT COUNT(*) as nb FROM AS_match_championnat
 												  WHERE id_match_championnat = :id_match_championnat');
 		$q->execute(array(
 			'id_match_championnat' => $id_match_championnat

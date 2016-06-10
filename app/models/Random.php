@@ -2,16 +2,20 @@
 class Random extends Manager{
 
 
-	public function genererDates($type){
-		$date_d;
-		$date_f;
+	public function genererDates($object){
+		var_dump($object);
+		$object->id_saison();
+		$saison_manager = new SaisonManager($this->pdo);
+		$saison = $saison_manager->getSaison($object->id_saison());
+		$date_d = $saison->date_debut();
+		$date_f = $saison->date_fin();
 		$jour_match;
 		$cpt=0;
 		$resultat= array();
 		
-		$info['date_debut'] = mktime($info['date_debut']);
+		$info['date_debut'] = mktime($date_d);
 
-		if($type == 'championnat'){
+		if(get_class($object) == 'Championnat'){
 			if(date("N" ,$info['date_debut'])==1 OR  date("N" ,$info['date_debut'])==5 OR
 				date("N" ,$info['date_debut'])==6 OR date("N" ,$info['date_debut'])==7){
 				$jour_match=$info['date_debut'];
@@ -308,23 +312,22 @@ class Random extends Manager{
 			return $resultat;
 		}
 	}
-	
-	public function genRencontre($type) {
 		
-		$tab_ini = array(array());
+	
+
+	public function genTableau(){//$type) {
+		$tab_ini = array();
 		$tab_temp = array();
-		$tab_final = array(array());
+		$tab_final = array();
 		
 		for($i=1;$i<=20;$i++) {
 			
 			$tab_temp = array();
 			
 			for($j=1;$j<=20-$i;$j++) {
-				
 				$tab_temp[0] = $i;
 				$tab_temp[1] = $i+$j;
 				array_push($tab_ini, $tab_temp);
-				
 			}
 			
 		}
@@ -336,7 +339,7 @@ class Random extends Manager{
 		
 		for($i=0;$i<=30;$i++) {
 			
-			for($j=0;$j<=190;$j++) {
+			for($j=0;$j<190;$j++) {
 				
 				if(!(in_array($tab_ini[$j][0],$tab_interdit) OR (in_array($tab_ini[$j][1],$tab_interdit)))) {
 					// Ici, aucune des 2 équipes ne joue à ce moment là.
@@ -363,6 +366,62 @@ class Random extends Manager{
 		$equipes = $equipe_manager->getEquipesDeDivision($championnat->id_championnat());
 		return $equipes;
 	}	
+
+	public function genererRencontre($championnat){
+		$equipes = $this->getArrayOfEquipes($championnat);
+		$tableau = $this->genTableau();
+		//var_dump($equipes);
+		$rencontres = array();
+		foreach($tableau as $ligne){
+				$tab_temp[0] = $equipes[$ligne[0]-1];
+				$tab_temp[1] = $equipes[$ligne[1]-1];
+				array_push($rencontres, $tab_temp);
+			}
+		return $rencontres;
+	}
+
+
+	public function generer_calendrier($championnat){
+		$arbitre_manager = new ArbitreManager($this->pdo);
+		$match_championnat_manager = new MatchChampionnatManager($this->pdo);
+		$rencontres = $this->genererRencontre($championnat);
+		$calendrier = $this->genererDates($championnat);
+		$num_arbitre = 1;
+		for($i = 0; $i < sizeof($rencontres); $i++){
+			$id_equipe_visiteur = $rencontres[$i][0]->id_equipe();
+			$id_equipe_domicile = $rencontres[$i][1]->id_equipe();
+			$date_match_championnat = date('Y/m/d', $calendrier[$i]);
+			$arbitres = array();
+			  for($j = $num_arbitre; $j < $num_arbitre + 5; $j++){
+			  	$id_arbitre = $arbitre_manager->getArbitre($j)->id_arbitre();
+			  	$arbitre = array_push($arbitres, $id_arbitre);
+			  }
+			  $num_arbitre = $num_arbitre + 5;
+			  if($num_arbitre > 600){
+			   $num_arbitre = 1;
+			  }	
+			$match_championnat_manager->ajoutMatch($id_equipe_domicile, $id_equipe_visiteur, $championnat->id_championnat(), $date_match_championnat, $arbitres);
+		}
+	}
+
+	function ScoreRandom(){
+		
+			$tabProbaScore= array("0","0","0","0","0","0","0","0","0","0","1","1","1","1","1","1","1","1","2","2","2","2","2","2","3","3", "3","3","3","4","4","4","5","5","6", "7", "8","9","10");
+
+			$equip=array($tabProbaScore[array_rand($tabProbaScore, 1)], $tabProbaScore[array_rand($tabProbaScore, 1)]);
+			
+			return $equip;
+
+		}
+
+	public function generer_score_aleatoire($champ){
+		$match_championnat_manager = new MatchChampionnatManager($this->pdo);
+		$matchs = $match_championnat_manager->getAllMatchChampionnats();
+		foreach($matchs as $match){
+			$scores = $this->ScoreRandom();
+			$match_championnat_manager->ajoutResultat($match->id_match_championnat(), $scores[0], $scores[1]);
+		}
+	}
 }
 
 ?>
