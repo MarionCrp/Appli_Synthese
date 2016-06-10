@@ -14,17 +14,31 @@ class ChampionnatManager extends Manager {
 	*
 	* @param $id int
 	*
-	* @return Arbitre
+	* @return Championnat
 	**/
 	public function getChampionnat($id){
 		$req = $this->pdo->prepare('SELECT * FROM AS_championnat WHERE id_championnat = :id');
 		$req->execute(array(
 			'id' => $id
 			));
-		if($datas = $req->fetch(PDO::FETCH_ASSOC)) return new Equipe($datas);
+		if($datas = $req->fetch(PDO::FETCH_ASSOC)) return new Championnat($datas);
 		else throw new Exception('Championnat non trouvé');
 	}
 
+	public function getChampionnat2($id_saison, $id_pays, $id_division){
+	$req = $this->pdo->prepare('SELECT * FROM AS_championnat 
+								WHERE id_saison = :id_saison
+								AND id_pays = :id_pays
+								AND id_division = :id_division');
+		$req->execute(array(
+			'id_saison' => $id_saison,
+			'id_pays' => $id_pays,
+			'id_division' => $id_division,
+			));
+		if($datas = $req->fetch(PDO::FETCH_ASSOC)) return new Championnat($datas);
+		else throw new Exception('Championnat non trouvé');
+	}
+	
 	/**
 	* Récupère la liste des objets de type arbitre
 	*

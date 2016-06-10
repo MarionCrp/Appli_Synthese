@@ -10,3 +10,4 @@ $match_tournoi_manager = new MatchTournoiManager($pdo);
 $pays_manager = new PaysManager($pdo);
 $saison_manager = new SaisonManager($pdo);
 $tournoi_manager = new TournoiManager($pdo);
+$random = new Random($pdo);

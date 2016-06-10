@@ -4,7 +4,7 @@
  *
  * @package Example-application
  */
-
+session_start();
 require '../libs/Smarty.class.php';
 
 /**
@@ -31,8 +31,14 @@ if(isset($_GET['page'])) {
 		case 'home': 
 			$page = 'home';
 			break;
+		case 'selection_championnat' :
+			$page = 'selection_championnat';
+			break;
 		case 'ajout_match_championnat':
 			$page = 'ajout_match_championnat';
+			break;
+		case 'generer_aleatoirement':
+			$page = 'generer_aleatoirement';
 			break;
 		default :
 			$page = '404';

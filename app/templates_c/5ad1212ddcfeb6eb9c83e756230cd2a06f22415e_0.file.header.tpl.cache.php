@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-27 08:03:17
+/* Smarty version 3.1.29, created on 2016-06-09 11:25:27
   from "C:\wamp64\www\Apply_synth\app\templates\header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
-  'has_nocache_code' => true,
+  'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5747ff450f4556_14143198',
+  'unifunc' => 'content_57595227a39ec8_65563662',
   'file_dependency' => 
   array (
     '5ad1212ddcfeb6eb9c83e756230cd2a06f22415e' => 
     array (
       0 => 'C:\\wamp64\\www\\Apply_synth\\app\\templates\\header.tpl',
-      1 => 1464336027,
+      1 => 1464967898,
       2 => 'file',
     ),
   ),
@@ -19,16 +19,38 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5747ff450f4556_14143198 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '53955747ff450e3887_50840349';
+function content_57595227a39ec8_65563662 ($_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '1643457595227a21676_47012339';
 ?>
-<HTML>
-<HEAD>
-<TITLE><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
- - <?php echo '/*%%SmartyNocache:53955747ff450e3887_50840349%%*/<?php echo $_smarty_tpl->tpl_vars[\'Name\']->value;?>
-/*/%%SmartyNocache:53955747ff450e3887_50840349%%*/';?>
-</TITLE>
-</HEAD>
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="desc">
+		<meta name="author" content="auteur">
+		<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+ - <?php echo $_smarty_tpl->tpl_vars['Name']->value;?>
+</title>
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<?php echo '<script'; ?>
+ src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"><?php echo '</script'; ?>
+>
+			<?php echo '<script'; ?>
+ src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"><?php echo '</script'; ?>
+>
+		<![endif]-->
+
+	</head>
+
 <BODY bgcolor="#ffffff">
 <?php }
 }
