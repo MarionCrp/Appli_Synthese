@@ -22,14 +22,12 @@ if(isset($_POST['saison']) && isset($_POST['pays']) && isset($_POST['division'])
 
 		$champ = $championnat_manager->getChampionnat2($saison, $pays, $division);
 
-
 		$message ="";
 		if(isset($_POST['generer_match_aleat'])){
 			$random->generer_calendrier($champ);
 		}
 		else if (isset($_POST['generer_score'])){
-			$random->generer_
-			score_aleatoire($champ);
+			$random->generer_score_aleatoire($champ);
 		}
 		else if(isset($_POST['afficher_calendrier'])){
 			$matchs = $match_championnat_manager->getAllMatchChampionnats($champ->id_championnat());
@@ -45,11 +43,11 @@ if(isset($_POST['saison']) && isset($_POST['pays']) && isset($_POST['division'])
 						'date_match_championnat' => $match->date_match_championnat(),
 						'buts_equipe_visiteur' => $match->buts_equipe_visiteur(),
 						'buts_equipe_domicile' => $match->buts_equipe_domicile(),
-						'arbitre1' => $arbitre_manager->getArbitre($match->id_arbitre1())->nom().' '.prenom();
-						'arbitre2' => $arbitre_manager->getArbitre($match->id_arbitre2())->nom().' '.prenom();
-						'arbitre3' => $arbitre_manager->getArbitre($match->id_arbitre3())->nom().' '.prenom();
-						'arbitre4' => $arbitre_manager->getArbitre($match->id_arbitre4())->nom().' '.prenom();
-						'remplacant' => $arbitre_manager->getArbitre($match->id_remplacant())->nom().' '.prenom();
+						'arbitre1' => $arbitre_manager->getArbitre($match->id_arbitre1())->nom().' '.prenom(),
+						'arbitre2' => $arbitre_manager->getArbitre($match->id_arbitre2())->nom().' '.prenom(),
+						'arbitre3' => $arbitre_manager->getArbitre($match->id_arbitre3())->nom().' '.prenom(),
+						'arbitre4' => $arbitre_manager->getArbitre($match->id_arbitre4())->nom().' '.prenom(),
+						'remplacant' => $arbitre_manager->getArbitre($match->id_remplacant())->nom().' '.prenom()
 						);
 				}
 				$message = "Liste des Matchs";
