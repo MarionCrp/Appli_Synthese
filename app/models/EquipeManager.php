@@ -85,5 +85,124 @@ class EquipeManager extends Manager {
 		return $equipes;
 	}
 
+	public function getTotalButsMis($id_equipe, $id_championnat){
+		$q = $this->pdo->prepare('SELECT SUM(`buts_equipe_visiteur`) FROM `AS_match_championnat` WHERE `id_equipe_visiteur` = :id_equipe AND `id_championnat` = :id_championnat GROUP BY `id_equipe_visiteur`');
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'id_equipe_visiteur' => $id_equipe
+			));
+		$total_buts_mis = $q->fetch();
 
+		$q = $this->pdo->prepare('SELECT SUM(`buts_equipe_domicile`) FROM `AS_match_championnat` WHERE `buts_equipe_domicile` = :id_equipe AND `id_championnat` = :id_championnat GROUP BY `buts_equipe_domicile`');
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+		$total_buts_mis += $q->fetch();
+
+		return $total_buts_mis;
+	}
+
+	public function getTotalButsPris($id_equipe, $id_championnat){
+
+		$q = $this->pdo->prepare('SELECT SUM(`buts_equipe_domicile`) FROM `AS_match_championnat` WHERE `id_equipe_visiteur` = :id_equipe AND `id_championnat` = :id_championnat GROUP BY `id_equipe_visiteur`');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'id_equipe_visiteur' => $id_equipe
+			));
+		$total_buts_pris = $q->fetch();
+
+		$q = $this->pdo->prepare('SELECT SUM(`buts_equipe_visiteur`) FROM `AS_match_championnat` WHERE `id_equipe_domicile` = :id_equipe AND `id_championnat` = :id_championnat GROUP BY `id_equipe_domicile');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+		$total_buts_pris += $q->fetch();
+
+		return $total_buts_pris;
+
+	}
+
+	public function getNbMatchsJoues($id_equipe, $id_championnat){
+
+		$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE `id_equipe_visiteur` = :id_equipe AND `id_championnat` = :id_championnat GROUP BY `id_equipe_visiteur');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_joues = $q->fetch();
+
+
+		$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE `id_equipe_domicile` = 42 AND `id_championnat` = 1 GROUP BY `id_equipe_domicile');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_joues += $q->fetch();
+		return $total_match_joues;
+
+	}
+
+	public function getNbMatchsGagnes($id_equipe, $id_championnat){
+		$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE `id_equipe_domicile` = :id_equipe AND `id_championnat` = :id_championnat AND buts_equipe_domicile > buts_equipe_visiteur');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_gagnes = $q->fetch();
+
+		$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE `id_equipe_visiteur` = :id_equipe AND `id_championnat` = :id_championnat AND buts_equipe_visiteur > buts_equipe_domicile');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_gagnes += $q->fetch();
+
+		return $total_match_gagnes;
+	}
+
+	public function getNbMatchsPerdus($id_equipe, $id_championnat){
+	$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE `id_equipe_domicile` = :id_equipe AND `id_championnat` = :id_championnat AND buts_equipe_domicile < buts_equipe_visiteur');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_perdus = $q->fetch();
+
+		$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE `id_equipe_visiteur` = :id_equipe AND `id_championnat` = :id_championnat AND buts_equipe_visiteur < buts_equipe_domicile');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_perdus += $q->fetch();
+
+		return $total_match_perdus;
+	}
+
+	public function getNbMatchsEgalites($id_equipe, $id_championnat){
+	$q = $this->pdo->prepare('SELECT COUNT(*) FROM `AS_match_championnat` WHERE (`id_equipe_domicile` = :id_equipe OR `id_equipe_visiteur` = :id_equipe) AND `id_championnat` = :id_championnat AND buts_equipe_domicile = buts_equipe_visiteur');
+
+		$q->execute(array(
+			'id_championnat' => $id_championnat,
+			'buts_equipe_domicile' => $id_equipe
+			));
+
+		$total_match_egalites = $q->fetch();
+
+		return $total_match_egalites;
+	}
 }
