@@ -13,10 +13,13 @@
 		  	</div>
 
 		  	<div class="form-group">
-		  		<form action="#" method="post">
+		  		<form action="" method="post">
+
 		  			<input type="submit" class="btn btn-primary" value="Générer matchs alétatoirement" name="generer_match_aleat"/>
-		  			<input type="submit" class="btn btn primary" value="Générer score" name="generer_score"/>
-		  	</form>
+		  			<input type="submit" class="btn btn-primary" value="Générer score" name="generer_score"/>
+		  			<input type="submit" class="btn btn-primary" value="Afficher Calendrier" name="afficher_calendrier"/>
+		  			<input type="submit" class="btn btn-primary" value="Afficher classement" name="afficher_classement"/>
+		  		</form>
 		 	
 		 	</div><!-- Form-Panel-Body -->
 		</div><!-- panel panel-default -->
