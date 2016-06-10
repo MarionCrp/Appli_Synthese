@@ -44,6 +44,3 @@
 </div>
 
 {include file="footer.tpl" title=foo}
-
-
-<p>TEST</p>

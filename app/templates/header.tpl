@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="desc">
 		<meta name="author" content="auteur">
-		<title>{$title} - {$Name}</title>
+		<title>{$title}</title>
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 		<link href="assets/css/style.css" rel="stylesheet">
