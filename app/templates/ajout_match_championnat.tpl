@@ -13,7 +13,7 @@
 		  	</div>
 
 		  	<div class="form-group">
-		  		<form action="index.php?page=generer_aleatoirement" method="post">
+		  		<form action="#" method="post">
 		  			<input type="submit" class="btn btn-primary" value="Générer matchs alétatoirement" name="generer_match_aleat"/>
 		  			<input type="submit" class="btn btn primary" value="Générer score" name="generer_score"/>
 		  	</form>
