@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 14:15:12
+/* Smarty version 3.1.29, created on 2016-06-10 15:20:37
   from "C:\wamp\www\Appli_Synthese\app\templates\selection_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575aaf50deebb1_59491734',
+  'unifunc' => 'content_575abea5ae6f54_87166146',
   'file_dependency' => 
   array (
     'dcaab2f62e33109ccaeccbada1fbcae306091271' => 
@@ -35,7 +35,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_575aaf50deebb1_59491734 ($_smarty_tpl) {
+function content_575abea5ae6f54_87166146 ($_smarty_tpl) {
 ?>
 
 <!DOCTYPE html>

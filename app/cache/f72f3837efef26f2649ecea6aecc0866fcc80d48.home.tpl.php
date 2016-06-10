@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 14:15:12
+/* Smarty version 3.1.29, created on 2016-06-10 15:09:55
   from "C:\wamp\www\Appli_Synthese\app\templates\home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575aaf5021c217_09412341',
+  'unifunc' => 'content_575abc23d77e58_13078391',
   'file_dependency' => 
   array (
     'f72f3837efef26f2649ecea6aecc0866fcc80d48' => 
@@ -29,7 +29,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_575aaf5021c217_09412341 ($_smarty_tpl) {
+function content_575abc23d77e58_13078391 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">

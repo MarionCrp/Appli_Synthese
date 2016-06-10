@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 14:55:20
+/* Smarty version 3.1.29, created on 2016-06-10 15:29:21
   from "C:\wamp\www\Appli_Synthese\app\templates\matchs_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575ab8b8ca1078_98469786',
+  'unifunc' => 'content_575ac0b118a461_03390256',
   'file_dependency' => 
   array (
     'b9bc2d54fc3a5bcefe8e1f9f49f26d762cf56762' => 
     array (
       0 => 'C:\\wamp\\www\\Appli_Synthese\\app\\templates\\matchs_championnat.tpl',
-      1 => 1465563207,
+      1 => 1465565288,
       2 => 'file',
     ),
     '6306a70380c6cdf5c9b8f562d5a8f236c23f8104' => 
@@ -29,7 +29,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
+function content_575ac0b118a461_03390256 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -64,6 +64,76 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 	
 		  	<div class="panel panel-default">
 		 	<div class="panel-heading">
+		   		 <h3 class="panel-title">2016-09-02</h3>
+		  	</div>
+		  
+		 	<div class="panel-body">
+		 		<table class="table table-striped" style="border:0;">
+		 			<tr>
+					    <td> Match aller </td>
+					    <td></td>
+					    <td>Paris-SG</td>
+					    <td>Lyon</td>
+					    <td></td>
+					</tr>
+					<tr>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="3" name="but_visiteur" /></td>
+							<td><input type="numeric" value="1" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="10" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
+					</tr>
+					<tr>
+					    <td></td>
+					    <td></td>
+					    <td>Cunningham Raymond, Butler Doris, Graham Andrea, Walker Andrea, Smith Billy</td>
+					    <td></td>
+					    <td></td>
+					    
+					</tr>
+				</table>
+
+		 	</div>
+		</div>
+			  	<div class="panel panel-default">
+		 	<div class="panel-heading">
+		   		 <h3 class="panel-title">2016-09-03</h3>
+		  	</div>
+		  
+		 	<div class="panel-body">
+		 		<table class="table table-striped" style="border:0;">
+		 			<tr>
+					    <td> Match aller </td>
+					    <td></td>
+					    <td>Monaco</td>
+					    <td>Marseille</td>
+					    <td></td>
+					</tr>
+					<tr>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="2" name="but_visiteur" /></td>
+							<td><input type="numeric" value="9" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="11" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
+					</tr>
+					<tr>
+					    <td></td>
+					    <td></td>
+					    <td>West Carlos, Welch Joe, Carroll Cynthia, Barnes Phillip, Perkins Amanda</td>
+					    <td></td>
+					    <td></td>
+					    
+					</tr>
+				</table>
+
+		 	</div>
+		</div>
+			  	<div class="panel panel-default">
+		 	<div class="panel-heading">
 		   		 <h3 class="panel-title">2016-09-03</h3>
 		  	</div>
 		  
@@ -77,11 +147,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>2</td>
-					    <td>0</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="2" name="but_visiteur" /></td>
+							<td><input type="numeric" value="0" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="12" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -110,11 +182,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>3</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="3" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="13" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -143,11 +217,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>3</td>
-					    <td>0</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="3" name="but_visiteur" /></td>
+							<td><input type="numeric" value="0" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="14" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -176,11 +252,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>7</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="7" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="15" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -209,11 +287,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>4</td>
-					    <td>4</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="4" name="but_visiteur" /></td>
+							<td><input type="numeric" value="4" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="16" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -242,11 +322,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>0</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="0" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="17" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -275,11 +357,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>2</td>
-					    <td>2</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="2" name="but_visiteur" /></td>
+							<td><input type="numeric" value="2" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="18" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -308,11 +392,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>3</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="3" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="19" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -341,11 +427,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>2</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="2" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="20" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -374,11 +462,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>3</td>
-					    <td>1</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="3" name="but_visiteur" /></td>
+							<td><input type="numeric" value="1" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="21" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -407,11 +497,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>4</td>
-					    <td>1</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="4" name="but_visiteur" /></td>
+							<td><input type="numeric" value="1" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="22" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -440,11 +532,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>1</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="1" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="23" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -473,11 +567,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>1</td>
-					    <td>3</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="1" name="but_visiteur" /></td>
+							<td><input type="numeric" value="3" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="24" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -506,11 +602,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>3</td>
-					    <td>9</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="3" name="but_visiteur" /></td>
+							<td><input type="numeric" value="9" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="25" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -539,11 +637,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>6</td>
-					    <td>1</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="6" name="but_visiteur" /></td>
+							<td><input type="numeric" value="1" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="26" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -572,11 +672,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>2</td>
-					    <td>1</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="2" name="but_visiteur" /></td>
+							<td><input type="numeric" value="1" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="27" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -605,11 +707,13 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>2</td>
-					    <td>0</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="2" name="but_visiteur" /></td>
+							<td><input type="numeric" value="0" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="28" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -638,82 +742,18 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>8</td>
-					    <td>5</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="8" name="but_visiteur" /></td>
+							<td><input type="numeric" value="5" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="29" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
 					    <td></td>
 					    <td>Woods Roy, Mcdonald Patrick, Anderson Cheryl, Bryant Marilyn, Hughes Emily</td>
-					    <td></td>
-					    <td></td>
-					    
-					</tr>
-				</table>
-
-		 	</div>
-		</div>
-			  	<div class="panel panel-default">
-		 	<div class="panel-heading">
-		   		 <h3 class="panel-title">2016-09-16</h3>
-		  	</div>
-		  
-		 	<div class="panel-body">
-		 		<table class="table table-striped" style="border:0;">
-		 			<tr>
-					    <td> Match aller </td>
-					    <td></td>
-					    <td>Paris-SG</td>
-					    <td>Marseille</td>
-					    <td></td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>9</td>
-					    <td>5</td>
-					    <td></td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>Murphy Joyce, Olson Ralph, Freeman Susan, Gonzales Julia, Hanson Debra</td>
-					    <td></td>
-					    <td></td>
-					    
-					</tr>
-				</table>
-
-		 	</div>
-		</div>
-			  	<div class="panel panel-default">
-		 	<div class="panel-heading">
-		   		 <h3 class="panel-title">2016-09-17</h3>
-		  	</div>
-		  
-		 	<div class="panel-body">
-		 		<table class="table table-striped" style="border:0;">
-		 			<tr>
-					    <td> Match aller </td>
-					    <td></td>
-					    <td>Lyon</td>
-					    <td>Monaco</td>
-					    <td></td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>0</td>
-					    <td>5</td>
-					    <td></td>
-					</tr>
-					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>Stewart Patricia, Gardner Arthur, Russell Jerry, Jones Catherine, Day Joseph</td>
 					    <td></td>
 					    <td></td>
 					    
@@ -742,8 +782,5 @@ function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
 
 </BODY>
 </HTML>
-
-
-
-<p>TEST</p><?php }
+<?php }
 }
