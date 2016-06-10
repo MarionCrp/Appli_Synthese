@@ -40,6 +40,13 @@
 		 	</div>
 		</div>
 		{/foreach}
+		<form action="" method="post" style="text-align:center;">
+		<ul class="pagination">
+			{for $i=1 to $nb_page}
+				<li><input type="submit" class="btn btn-default" value="{$i}" name="afficher_calendrier"/></li>
+			{/for}
+		</ul>
+	</form>
 	</div>
 </div>
 

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 11:26:15
+/* Smarty version 3.1.29, created on 2016-06-10 14:53:35
   from "C:\wamp\www\Appli_Synthese\app\templates\matchs_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575a87b7376a64_95928180',
+  'unifunc' => 'content_575ab84fc15175_83487459',
   'file_dependency' => 
   array (
     'b9bc2d54fc3a5bcefe8e1f9f49f26d762cf56762' => 
     array (
       0 => 'C:\\wamp\\www\\Appli_Synthese\\app\\templates\\matchs_championnat.tpl',
-      1 => 1465550772,
+      1 => 1465563207,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_575a87b7376a64_95928180 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '17893575a87b7252597_93402838';
+function content_575ab84fc15175_83487459 ($_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '12863575ab84fb75c16_71906197';
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
 ?>
 
@@ -95,6 +95,21 @@ if ($__foreach_match_0_saved_item) {
 $_smarty_tpl->tpl_vars['match'] = $__foreach_match_0_saved_item;
 }
 ?>
+		<form action="" method="post" style="text-align:center;">
+		<ul class="pagination">
+			<?php
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['i']->step = 1;$_smarty_tpl->tpl_vars['i']->total = (int) ceil(($_smarty_tpl->tpl_vars['i']->step > 0 ? $_smarty_tpl->tpl_vars['nb_page']->value+1 - (1) : 1-($_smarty_tpl->tpl_vars['nb_page']->value)+1)/abs($_smarty_tpl->tpl_vars['i']->step));
+if ($_smarty_tpl->tpl_vars['i']->total > 0) {
+for ($_smarty_tpl->tpl_vars['i']->value = 1, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++) {
+$_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration == $_smarty_tpl->tpl_vars['i']->total;?>
+				<li><input type="submit" class="btn btn-default" value="<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+" name="afficher_calendrier"/></li>
+			<?php }
+}
+?>
+
+		</ul>
+	</form>
 	</div>
 </div>
 
