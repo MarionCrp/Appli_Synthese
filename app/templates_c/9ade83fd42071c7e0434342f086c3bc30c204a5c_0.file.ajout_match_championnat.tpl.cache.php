@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 07:05:42
+/* Smarty version 3.1.29, created on 2016-06-10 07:24:15
   from "C:\wamp64\www\Apply_synth\app\templates\ajout_match_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575a66c60f0211_57169664',
+  'unifunc' => 'content_575a6b1f4aafa4_40230002',
   'file_dependency' => 
   array (
     '9ade83fd42071c7e0434342f086c3bc30c204a5c' => 
     array (
       0 => 'C:\\wamp64\\www\\Apply_synth\\app\\templates\\ajout_match_championnat.tpl',
-      1 => 1465542320,
+      1 => 1465543077,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_575a66c60f0211_57169664 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '28912575a66c6031648_85702202';
+function content_575a6b1f4aafa4_40230002 ($_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '26217575a6b1f36b933_28261484';
 ?>
 
 <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header_ajout_match.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>"Ajout d'un match de championnat"), 0, false);
@@ -42,7 +42,7 @@ $_smarty_tpl->compiled->nocache_hash = '28912575a66c6031648_85702202';
 		  	</div>
 
 		  	<div class="form-group">
-		  		<form action="index.php?page=generer_aleatoirement" method="post">
+		  		<form action="#" method="post">
 		  			<input type="submit" class="btn btn-primary" value="Générer matchs alétatoirement" name="generer_match_aleat"/>
 		  			<input type="submit" class="btn btn primary" value="Générer score" name="generer_score"/>
 		  	</form>
