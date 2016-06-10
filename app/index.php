@@ -50,6 +50,6 @@ if(isset($_GET['page'])) {
 			break;
 	}
 } else {
-	$page = 'acceuil';
+	$page = 'accueil';
 }
 include ('controllers/'.$page.'_controller.php');
