@@ -116,12 +116,12 @@ class MatchChampionnat {
 
 	public function setButs_equipe_visiteur($buts_equipe_visiteur)
 	{
-		$buts_equipe_visiteur = (int) $buts_equipe_visiteur;
+		$buts_equipe_visiteur = $buts_equipe_visiteur;
 		$this->buts_equipe_visiteur = $buts_equipe_visiteur;
 	}
 	public function setButs_equipe_domicile($buts_equipe_domicile)
 	{
-		$buts_equipe_domicile = (int) $buts_equipe_domicile;
+		$buts_equipe_domicile = $buts_equipe_domicile;
 		$this->buts_equipe_domicile = $buts_equipe_domicile;
 	}
 	public function setId_arbitre1($id_arbitre1)

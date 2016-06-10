@@ -15,10 +15,7 @@
 		}
 
 	$smarty->display('ajout_match_championnat.tpl');
-		
-		
-
-
+	
 		//unset($_SESSION['saison']);
 	} else {
 		echo 'rah';
