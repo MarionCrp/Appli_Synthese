@@ -13,13 +13,10 @@
 		  	</div>
 
 		  	<div class="form-group">
-		  		<form action="index.php?page=generer_aleatoirement_controller.php" method="post">
-<!-- 		  			<input type="hidden" name="saison" value={$saison} />
-<input type="hidden" name="pays" value={$pays}  />
-<input type="hidden" name="division" value={$division} /> -->
-		  			<input class="btn btn-primary" value="Générer matchs alétatoirement" name="generer_match_aleat"/>
-		  			<input class="btn btn primary" value="Générer score" name="generer_score"/>
-		  
+		  		<form action="index.php?page=generer_aleatoirement" method="post">
+		  			<input type="submit" class="btn btn-primary" value="Générer matchs alétatoirement" name="generer_match_aleat"/>
+		  			<input type="submit" class="btn btn primary" value="Générer score" name="generer_score"/>
+		  	</form>
 		 	
 		 	</div><!-- Form-Panel-Body -->
 		</div><!-- panel panel-default -->
