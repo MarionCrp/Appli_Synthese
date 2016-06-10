@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 14:06:48
+/* Smarty version 3.1.29, created on 2016-06-10 14:33:32
   from "C:\wamp\www\Appli_Synthese\app\templates\header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575aad58951bd3_06299305',
+  'unifunc' => 'content_575ab39cb36791_02287290',
   'file_dependency' => 
   array (
     '6306a70380c6cdf5c9b8f562d5a8f236c23f8104' => 
@@ -19,8 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_575aad58951bd3_06299305 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '24727575aad586830e1_31530432';
+function content_575ab39cb36791_02287290 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
