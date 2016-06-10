@@ -1,23 +1,39 @@
 <?php
+<<<<<<< HEAD
+/* Smarty version 3.1.29, created on 2016-06-10 14:23:36
+=======
 /* Smarty version 3.1.29, created on 2016-06-10 14:15:12
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
   from "C:\wamp\www\Appli_Synthese\app\templates\home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
+<<<<<<< HEAD
+  'unifunc' => 'content_575ab148694415_38042925',
+=======
   'unifunc' => 'content_575aaf5021c217_09412341',
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
   'file_dependency' => 
   array (
     'f72f3837efef26f2649ecea6aecc0866fcc80d48' => 
     array (
       0 => 'C:\\wamp\\www\\Appli_Synthese\\app\\templates\\home.tpl',
+<<<<<<< HEAD
+      1 => 1465561412,
+=======
       1 => 1465560046,
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
       2 => 'file',
     ),
     '6306a70380c6cdf5c9b8f562d5a8f236c23f8104' => 
     array (
       0 => 'C:\\wamp\\www\\Appli_Synthese\\app\\templates\\header.tpl',
+<<<<<<< HEAD
+      1 => 1465560404,
+=======
       1 => 1465471582,
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
       2 => 'file',
     ),
     'd1f691df83dfd86ba2936c18a2e52ef8ff41970f' => 
@@ -29,7 +45,11 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   ),
   'cache_lifetime' => 120,
 ),true)) {
+<<<<<<< HEAD
+function content_575ab148694415_38042925 ($_smarty_tpl) {
+=======
 function content_575aaf5021c217_09412341 ($_smarty_tpl) {
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -41,7 +61,11 @@ function content_575aaf5021c217_09412341 ($_smarty_tpl) {
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="desc">
 		<meta name="author" content="auteur">
+<<<<<<< HEAD
+		<title>foo</title>
+=======
 		<title>foo - </title>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 		<link href="assets/css/style.css" rel="stylesheet">

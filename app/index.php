@@ -20,7 +20,9 @@ $smarty = new Smarty;
 
 //$smarty->force_compile = true;
 $smarty->debugging = true;
-$smarty->caching = false;
+
+$smarty->caching = false;//CACHE DESACTIVE
+
 $smarty->cache_lifetime = 120;
 
 
@@ -29,7 +31,7 @@ if(isset($_GET['page'])) {
 	$page = htmlspecialchars($_GET['page']);
 	switch ($page) {
 		case 'home': 
-			$page = 'home';
+			$page = 'accueil';
 			break;
 		case 'selection_championnat' :
 			$page = 'selection_championnat';
@@ -44,10 +46,10 @@ if(isset($_GET['page'])) {
 			$page = 'matchs_championnat';
 			break;
 		default :
-			$page = '404';
+			$page = 'accueil';
 			break;
 	}
 } else {
-	$page = 'home';
+	$page = 'acceuil';
 }
 include ('controllers/'.$page.'_controller.php');

@@ -9,7 +9,7 @@
 	  	<div class="panel panel-default">
 		 	<div class="panel-heading">
 		   		 <h3 class="panel-title">{$match.date_match_championnat}</h3>
-		  	</div>
+		  	</div> 
 		  
 		 	<div class="panel-body">
 		 		<table class="table table-striped" style="border:0;">
@@ -51,6 +51,3 @@
 </div>
 
 {include file="footer.tpl" title=foo}
-
-
-<p>TEST</p>
