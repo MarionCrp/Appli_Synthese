@@ -35,6 +35,19 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 			if(sizeOf($matchs) == 0){
 				$message = "Aucun match prévus";
 			} else {
+				
+				// Mise à jour d'un scores
+				if(isset($_POST['but_visiteur'])) {
+					
+					$but_visiteur = intval($_POST['but_visiteur']);
+					$id_match_championnat = intval($_POST['id_match_championnat']);
+					$but_domicile = intval($_POST['but_domicile']);
+					
+					$match_championnat_manager->ajoutResultat($id_match_championnat, $but_visiteur, $but_domicile);
+					
+				}				
+				
+				
 				foreach($matchs as $match){
 					$arbitre1 = $arbitre_manager->getArbitre($match->id_arbitre1());
 					$arbitre2 = $arbitre_manager->getArbitre($match->id_arbitre2());

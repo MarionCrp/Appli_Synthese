@@ -21,11 +21,13 @@
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>{$match.buts_equipe_visiteur}</td>
-					    <td>{$match.buts_equipe_domicile}</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="{$match.buts_equipe_visiteur}" name="but_visiteur" /></td>
+							<td><input type="numeric" value="{$match.buts_equipe_domicile}" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="{$match.id_match_championnat}" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -50,4 +52,6 @@
 	</div>
 </div>
 
+
 {include file="footer.tpl" title=foo}
+
