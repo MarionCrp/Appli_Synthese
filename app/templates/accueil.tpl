@@ -31,7 +31,7 @@
 <!--  Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Voir une démo</h3>
-  <p>Vos compétitions vous accompagne où vous voulez. Toujours accessible à travers Internet. Ligue 1, Ligue des Champions ou encore Ligue Europa, toutes les résultats et classements toujours à porter de main. De plus, vous pouvez ajouter des compétitions, des équipes ou de match avec leur résultat.</p>
+  <p>Vos compétitions vous suiveront partout où vous irez. Ligue 1, Ligue des Champions ou encore Ligue Europa, toutes les résultats et classements toujours à porter de main. De plus, vous pouvez ajouter des compétitions, des équipes ou de match avec leurs résultats.</p>
   <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-play-circle"></span> Tester
   </a>
