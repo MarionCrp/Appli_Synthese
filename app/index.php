@@ -20,7 +20,9 @@ $smarty = new Smarty;
 
 //$smarty->force_compile = true;
 $smarty->debugging = true;
+
 $smarty->caching = false;//CACHE DESACTIVE
+
 $smarty->cache_lifetime = 120;
 
 

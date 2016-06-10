@@ -1,11 +1,19 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.29, created on 2016-06-10 14:32:29
+=======
+/* Smarty version 3.1.29, created on 2016-06-10 14:15:12
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
   from "C:\wamp\www\Appli_Synthese\app\templates\selection_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
+<<<<<<< HEAD
   'unifunc' => 'content_575ab35d2f0dc5_22004288',
+=======
+  'unifunc' => 'content_575aaf50deebb1_59491734',
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
   'file_dependency' => 
   array (
     'dcaab2f62e33109ccaeccbada1fbcae306091271' => 
@@ -35,7 +43,11 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   ),
   'cache_lifetime' => 120,
 ),true)) {
+<<<<<<< HEAD
 function content_575ab35d2f0dc5_22004288 ($_smarty_tpl) {
+=======
+function content_575aaf50deebb1_59491734 ($_smarty_tpl) {
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +60,11 @@ function content_575ab35d2f0dc5_22004288 ($_smarty_tpl) {
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="desc">
 		<meta name="author" content="auteur">
+<<<<<<< HEAD
 		<title>Ajouter un match</title>
+=======
+		<title>Ajouter un match - </title>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 		<link href="assets/css/style.css" rel="stylesheet">
@@ -70,6 +86,7 @@ function content_575ab35d2f0dc5_22004288 ($_smarty_tpl) {
   <li role="presentation"><a href="index.php?page=ajout_match_europa">Coupe Europa</a></li>
 </ul>
 
+<<<<<<< HEAD
 <!-- <br />
 <font size='1'><table class='xdebug-error xe-notice' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
 <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Notice: Array to string conversion in C:\wamp\www\Appli_Synthese\app\templates_c\dcaab2f62e33109ccaeccbada1fbcae306091271_0.file.selection_championnat.tpl.cache.php on line <i>32</i></th></tr>
@@ -87,6 +104,9 @@ function content_575ab35d2f0dc5_22004288 ($_smarty_tpl) {
 <tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.1067</td><td bgcolor='#eeeeec' align='right'>1066872</td><td bgcolor='#eeeeec'>content_575a66980d29b7_33500509(  )</td><td title='C:\wamp\www\Appli_Synthese\libs\sysplugins\smarty_template_resource_base.php' bgcolor='#eeeeec'>..\smarty_template_resource_base.php<b>:</b>122</td></tr>
 </table></font>
 Array -->
+=======
+<!-- Array -->
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 
 <div class="row">
 	  <div class="col-md-2"></div>

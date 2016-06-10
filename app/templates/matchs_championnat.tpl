@@ -9,7 +9,7 @@
 	  	<div class="panel panel-default">
 		 	<div class="panel-heading">
 		   		 <h3 class="panel-title">{$match.date_match_championnat}</h3>
-		  	</div>
+		  	</div> 
 		  
 		 	<div class="panel-body">
 		 		<table class="table table-striped" style="border:0;">
@@ -40,6 +40,13 @@
 		 	</div>
 		</div>
 		{/foreach}
+		<form action="" method="post" style="text-align:center;">
+		<ul class="pagination">
+			{for $i=1 to $nb_page}
+				<li><input type="submit" class="btn btn-default" value="{$i}" name="afficher_calendrier"/></li>
+			{/for}
+		</ul>
+	</form>
 	</div>
 </div>
 

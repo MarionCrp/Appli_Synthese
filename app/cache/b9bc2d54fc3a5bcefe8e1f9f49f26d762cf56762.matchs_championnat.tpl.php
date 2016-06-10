@@ -1,17 +1,25 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.29, created on 2016-06-10 14:28:11
+=======
+/* Smarty version 3.1.29, created on 2016-06-10 14:55:20
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
   from "C:\wamp\www\Appli_Synthese\app\templates\matchs_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
+<<<<<<< HEAD
   'unifunc' => 'content_575ab25b6faef8_04175024',
+=======
+  'unifunc' => 'content_575ab8b8ca1078_98469786',
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
   'file_dependency' => 
   array (
     'b9bc2d54fc3a5bcefe8e1f9f49f26d762cf56762' => 
     array (
       0 => 'C:\\wamp\\www\\Appli_Synthese\\app\\templates\\matchs_championnat.tpl',
-      1 => 1465550772,
+      1 => 1465563207,
       2 => 'file',
     ),
     '6306a70380c6cdf5c9b8f562d5a8f236c23f8104' => 
@@ -29,7 +37,11 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   ),
   'cache_lifetime' => 120,
 ),true)) {
+<<<<<<< HEAD
 function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
+=======
+function content_575ab8b8ca1078_98469786 ($_smarty_tpl) {
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -41,7 +53,11 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="desc">
 		<meta name="author" content="auteur">
+<<<<<<< HEAD
 		<title>foo</title>
+=======
+		<title>foo - </title>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 		<link href="assets/css/style.css" rel="stylesheet">
@@ -64,6 +80,7 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 	
 		  	<div class="panel panel-default">
 		 	<div class="panel-heading">
+<<<<<<< HEAD
 		   		 <h3 class="panel-title">2016-09-02</h3>
 		  	</div>
 		  
@@ -130,6 +147,8 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 		</div>
 			  	<div class="panel panel-default">
 		 	<div class="panel-heading">
+=======
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 		   		 <h3 class="panel-title">2016-09-03</h3>
 		  	</div>
 		  
@@ -145,8 +164,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>3</td>
 					    <td>8</td>
+=======
+					    <td>2</td>
+					    <td>0</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -178,8 +202,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>2</td>
 					    <td>7</td>
+=======
+					    <td>1</td>
+					    <td>3</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -244,8 +273,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>7</td>
 					    <td>1</td>
+=======
+					    <td>1</td>
+					    <td>7</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -277,8 +311,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>0</td>
 					    <td>1</td>
+=======
+					    <td>4</td>
+					    <td>4</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -311,7 +350,11 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					    <td></td>
 					    <td></td>
 					    <td>1</td>
+<<<<<<< HEAD
 					    <td>5</td>
+=======
+					    <td>0</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -344,7 +387,11 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					    <td></td>
 					    <td></td>
 					    <td>2</td>
+<<<<<<< HEAD
 					    <td>0</td>
+=======
+					    <td>2</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -376,8 +423,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>5</td>
 					    <td>2</td>
+=======
+					    <td>1</td>
+					    <td>3</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -409,7 +461,11 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>5</td>
+=======
+					    <td>1</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td>2</td>
 					    <td></td>
 					</tr>
@@ -442,8 +498,12 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>0</td>
+=======
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td>3</td>
+					    <td>1</td>
 					    <td></td>
 					</tr>
 					<tr>
@@ -475,8 +535,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>0</td>
 					    <td>3</td>
+=======
+					    <td>4</td>
+					    <td>1</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -508,8 +573,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>0</td>
 					    <td>0</td>
+=======
+					    <td>1</td>
+					    <td>1</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -541,8 +611,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>8</td>
 					    <td>5</td>
+=======
+					    <td>1</td>
+					    <td>3</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -574,8 +649,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>1</td>
 					    <td>2</td>
+=======
+					    <td>3</td>
+					    <td>9</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -607,8 +687,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>1</td>
 					    <td>2</td>
+=======
+					    <td>6</td>
+					    <td>1</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -640,7 +725,11 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>4</td>
+=======
+					    <td>2</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td>1</td>
 					    <td></td>
 					</tr>
@@ -673,8 +762,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>9</td>
 					    <td>4</td>
+=======
+					    <td>2</td>
+					    <td>0</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -706,8 +800,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>3</td>
 					    <td>1</td>
+=======
+					    <td>8</td>
+					    <td>5</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -739,8 +838,13 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>3</td>
 					    <td>2</td>
+=======
+					    <td>9</td>
+					    <td>5</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
@@ -772,6 +876,7 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>1</td>
 					    <td>1</td>
 					    <td></td>
@@ -840,11 +945,16 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					    <td></td>
 					    <td>1</td>
 					    <td>1</td>
+=======
+					    <td>0</td>
+					    <td>5</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					</tr>
 					<tr>
 					    <td></td>
 					    <td></td>
+<<<<<<< HEAD
 					    <td>Green Kelly, Carter Barbara, Simmons Karen, Burton Ryan, Washington Rose</td>
 					    <td></td>
 					    <td></td>
@@ -31437,6 +31547,9 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 					    <td></td>
 					    <td></td>
 					    <td>Nguyen Karen, Harris Amanda, Spencer Jack, Spencer Alan, Turner Teresa</td>
+=======
+					    <td>Stewart Patricia, Gardner Arthur, Russell Jerry, Jones Catherine, Day Joseph</td>
+>>>>>>> d5766b4248b99477fb09af1910d522bc1fa6f0d9
 					    <td></td>
 					    <td></td>
 					    
@@ -31445,7 +31558,22 @@ function content_575ab25b6faef8_04175024 ($_smarty_tpl) {
 
 		 	</div>
 		</div>
-			</div>
+				<form action="" method="post" style="text-align:center;">
+		<ul class="pagination">
+							<li><input type="submit" class="btn btn-default" value="1" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="2" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="3" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="4" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="5" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="6" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="7" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="8" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="9" name="afficher_calendrier"/></li>
+							<li><input type="submit" class="btn btn-default" value="10" name="afficher_calendrier"/></li>
+			
+		</ul>
+	</form>
+	</div>
 </div>
 
 </BODY>
