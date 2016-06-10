@@ -8,12 +8,13 @@
 		$champ = $championnat_manager->getChampionnat2($saison, $pays, $division);
 
 		if(isset($_POST['generer_match_aleat'])){
-			$random->generer_calendrier($champ);
+			//$random->generer_calendrier($champ);
 		}
 		else if (isset($_POST['generer_score'])){
 			$random->generer_score_aleatoire($champ);
 		}
 
+	$smarty->display('ajout_match_championnat.tpl');
 		
 		
 
