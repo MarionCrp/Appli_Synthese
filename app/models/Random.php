@@ -408,9 +408,9 @@ class Random extends Manager{
 		
 			$tabProbaScore= array("0","0","0","0","0","0","0","0","0","0","1","1","1","1","1","1","1","1","2","2","2","2","2","2","3","3", "3","3","3","4","4","4","5","5","6", "7", "8","9","10");
 
-			$equip=array($tabProbaScore[array_rand($tabProbaScore, 1)], $tabProbaScore[array_rand($tabProbaScore, 1)]);
+			$score= $tabProbaScore[array_rand($tabProbaScore, 1)];
 			
-			return $equip;
+			return $score;
 
 		}
 
@@ -418,8 +418,10 @@ class Random extends Manager{
 		$match_championnat_manager = new MatchChampionnatManager($this->pdo);
 		$matchs = $match_championnat_manager->getAllMatchChampionnats();
 		foreach($matchs as $match){
-			$scores = $this->ScoreRandom();
-			$match_championnat_manager->ajoutResultat($match->id_match_championnat(), $scores[0], $scores[1]);
+			$score1 = $this->ScoreRandom();
+			$score2 = $this->ScoreRandom();
+			var_dump($match,$score1, $score2);
+			$match_championnat_manager->ajoutResultat($match->id_match_championnat(), (int) $score1, (int) $score2);
 		}
 	}
 }
