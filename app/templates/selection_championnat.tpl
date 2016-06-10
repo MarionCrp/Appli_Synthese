@@ -1,4 +1,3 @@
-
 {include file="header_ajout_match.tpl" title="Sélection d'un de championnat"}
 
 <!-- {$saisons[0]} -->

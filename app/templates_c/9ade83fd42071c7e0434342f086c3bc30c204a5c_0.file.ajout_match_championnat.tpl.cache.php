@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 12:17:16
+/* Smarty version 3.1.29, created on 2016-06-10 06:55:03
   from "C:\wamp64\www\Apply_synth\app\templates\ajout_match_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57595e4c85c0b9_59051586',
+  'unifunc' => 'content_575a6447f287c6_77964189',
   'file_dependency' => 
   array (
     '9ade83fd42071c7e0434342f086c3bc30c204a5c' => 
     array (
       0 => 'C:\\wamp64\\www\\Apply_synth\\app\\templates\\ajout_match_championnat.tpl',
-      1 => 1465474598,
+      1 => 1465541495,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_57595e4c85c0b9_59051586 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '1164657595e4c7168a1_25154409';
+function content_575a6447f287c6_77964189 ($_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '12397575a6447e01d99_65247432';
 ?>
 
 <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header_ajout_match.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>"Ajout d'un match de championnat"), 0, false);
@@ -42,14 +42,15 @@ $_smarty_tpl->compiled->nocache_hash = '1164657595e4c7168a1_25154409';
 		  	</div>
 
 		  	<div class="form-group">
-		  		<form action="#" method="post">
+		  		<form action="index.php?page=generer_aleatoirement_controller.php" method="post">
 <!-- 		  			<input type="hidden" name="saison" value=<?php echo $_smarty_tpl->tpl_vars['saison']->value;?>
  />
 <input type="hidden" name="pays" value=<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
   />
 <input type="hidden" name="division" value=<?php echo $_smarty_tpl->tpl_vars['division']->value;?>
  /> -->
-		  			<a class="btn btn-primary" href="index.php?page=generer_aleatoirement" name="generer_match_aleat"/>Générer Alétatoirement</a>
+		  			<input class="btn btn-primary" value="Générer matchs alétatoirement" name="generer_match_aleat"/>
+		  			<input class="btn btn primary" value="Générer score" name="generer_score"/>
 		  
 		 	
 		 	</div><!-- Form-Panel-Body -->

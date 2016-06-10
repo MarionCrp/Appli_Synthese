@@ -38,7 +38,7 @@ class MatchChampionnatManager extends Manager {
 		$req->execute();
 		while ($data = $req->fetch()){
 			$array[] = new MatchChampionnat([
-				'id_championnat_championnat' => $data['id_match_championnat'],
+				'id_match_championnat' => $data['id_match_championnat'],
 				'id_equipe_visiteur' => $data['id_equipe_visiteur'],
 				'id_equipe_domicile' => $data['id_equipe_domicile'],
 				'id_championnat' => $data['id_championnat'],
@@ -89,15 +89,18 @@ class MatchChampionnatManager extends Manager {
 		// Si elle n'est pas en base de donnée :
 		if (!$data) throw new Exception("Le match demandé n'existe pas");
 		else {
-			$q = $this->_db->prepare('UPDATE AS_match_championnat
+			$q = $this->pdo->prepare('UPDATE AS_match_championnat
 										SET buts_equipe_visiteur = :buts_equipe_visiteur,
-											buts_equipe_domicile = :buts_equipe_domicile');
+											buts_equipe_domicile = :buts_equipe_domicile
+											WHERE id_match_championnat = :id_match_championnat');
 			$q->execute(array(
 				'buts_equipe_visiteur' => $buts_equipe_visiteur,
-				'buts_equipe_domicile' => $buts_equipe_domicile
+				'buts_equipe_domicile' => $buts_equipe_domicile,
+				'id_match_championnat' => $id_match_championnat
 				));
+			var_dump($buts_equipe_visiteur, $buts_equipe_domicile);
 				
-			if (!$req) throw new Exception("Erreur lors de l'ajout des résultats");
+			if (!$q) throw new Exception("Erreur lors de l'ajout des résultats");
 			else echo ('<p class="success">Les résultats du match  ont été mis à jour </p>');	
 		}
 	}
