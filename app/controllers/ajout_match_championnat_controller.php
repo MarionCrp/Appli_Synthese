@@ -74,12 +74,39 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 			$smarty->display('matchs_championnat.tpl');
 		} 
 		else if(isset($_POST['afficher_classement'])){
-			$matchs = $match_championnat_manager->getAllMatchChampionnats($champ->id_championnat());
-			if(sizeOf($matchs) == 0){
-				$message = "Aucun classement";
+			$equipes = $equipe_manager->getEquipesDeDivision($champ->id_championnat());
+			if(sizeOf($equipes) == 0){
+				$message = "Erreur, pas d'équipes trouvées";
 			} else {
 				$message = "Classement";
+				$id_champ = $champ->id_championnat();
+				$id_equipe = $equipe->id_equipe();
+				foreach($equipes as $equipe){
+					$nb_victoires = $equipe_manager->getNbMatchsGagnes($id_equipe, $id_champ);
+					$nb_defaites = $equipe_manager->getNbMatchsPerdus($id_equipe, $id_champ);
+					$nb_egalites = $equipe_manager->getNbMatchsEgalites($id_equipe, $id_champ);
+					$buts_mis = $equipe_manager->getTotalButsMis($id_equipe, $id_champ);
+					$buts_pris = $equipe_manager->getTotalButsPris($id_equipe, $id_champ);
+					$total_points = $nb_victoires*3 + $nb_egalites; 
+					/*$classement[] = array(
+						'equipe' => $equipe_manager->getEquipe($match->id_equipe_visiteur())->libelle_equipe(),
+						'total_points' => $total_points,
+						'nb_victoires' => $nb_victoires,
+						'nb_egalites' => $nb_egalites,
+						'nb_defaites' => $nb_defaites,
+						'buts_mis' => $buts_mis,
+						'buts_pris' => $buts_pris,
+						'buts_diff' => $buts_mis - $buts_pris
+					)*/
+					$classement[] = array(
+						$equipe->id_equipe() => $total_points
+						);
+
+				}
+
+				var_dump($classement);
 			}
+
 			$smarty->assign("message", $message);
 			$smarty->assign("matchs", $matchs);
 			$smarty->display('classement.tpl');

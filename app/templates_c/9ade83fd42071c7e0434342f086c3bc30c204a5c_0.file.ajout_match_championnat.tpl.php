@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 09:55:41
+/* Smarty version 3.1.29, created on 2016-06-10 12:52:58
   from "C:\wamp64\www\Apply_synth\app\templates\ajout_match_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575a8e9d9c1e52_80164090',
+  'unifunc' => 'content_575ab82abdf029_55664668',
   'file_dependency' => 
   array (
     '9ade83fd42071c7e0434342f086c3bc30c204a5c' => 
     array (
       0 => 'C:\\wamp64\\www\\Apply_synth\\app\\templates\\ajout_match_championnat.tpl',
-      1 => 1465552536,
+      1 => 1465552579,
       2 => 'file',
     ),
   ),
@@ -21,11 +21,10 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_575a8e9d9c1e52_80164090 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '28228575a8e9d916022_32119991';
+function content_575ab82abdf029_55664668 ($_smarty_tpl) {
 ?>
 
-<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header_ajout_match.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>"Ajout d'un match de championnat"), 0, false);
+<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header_ajout_match.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>"Ajout d'un match de championnat"), 0, false);
 ?>
 
 
@@ -55,6 +54,6 @@ $_smarty_tpl->compiled->nocache_hash = '28228575a8e9d916022_32119991';
 	  </div> <!-- col-md-8 -->
 	  <div class="col-md-2"></div>
 </div>
-<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
+<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
 }
 }
