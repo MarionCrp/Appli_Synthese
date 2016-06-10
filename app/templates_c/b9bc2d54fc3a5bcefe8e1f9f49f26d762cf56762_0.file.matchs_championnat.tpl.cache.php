@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-10 14:53:35
+/* Smarty version 3.1.29, created on 2016-06-10 15:28:14
   from "C:\wamp\www\Appli_Synthese\app\templates\matchs_championnat.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575ab84fc15175_83487459',
+  'unifunc' => 'content_575ac06edeba30_88027722',
   'file_dependency' => 
   array (
     'b9bc2d54fc3a5bcefe8e1f9f49f26d762cf56762' => 
     array (
       0 => 'C:\\wamp\\www\\Appli_Synthese\\app\\templates\\matchs_championnat.tpl',
-      1 => 1465563207,
+      1 => 1465565288,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_575ab84fc15175_83487459 ($_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '12863575ab84fb75c16_71906197';
+function content_575ac06edeba30_88027722 ($_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '32191575ac06ed703c2_05395138';
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
 ?>
 
@@ -63,13 +63,16 @@ $__foreach_match_0_saved_local_item = $_smarty_tpl->tpl_vars['match'];
 					    <td></td>
 					</tr>
 					<tr>
-					    <td></td>
-					    <td></td>
-					    <td><?php echo $_smarty_tpl->tpl_vars['match']->value['buts_equipe_visiteur'];?>
-</td>
-					    <td><?php echo $_smarty_tpl->tpl_vars['match']->value['buts_equipe_domicile'];?>
-</td>
-					    <td></td>
+						<form action="" method="post">
+							<td></td>
+							<td></td>
+							<td><input type="numeric" value="<?php echo $_smarty_tpl->tpl_vars['match']->value['buts_equipe_visiteur'];?>
+" name="but_visiteur" /></td>
+							<td><input type="numeric" value="<?php echo $_smarty_tpl->tpl_vars['match']->value['buts_equipe_domicile'];?>
+" name="but_domicile" /></td>
+							<td><input type="hidden" name="id_match_championnat" value="<?php echo $_smarty_tpl->tpl_vars['match']->value['id_match_championnat'];?>
+" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
+						</form>
 					</tr>
 					<tr>
 					    <td></td>
@@ -114,9 +117,5 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 </div>
 
 <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array('title'=>'foo'), 0, false);
-?>
-
-
-
-<p>TEST</p><?php }
+}
 }
