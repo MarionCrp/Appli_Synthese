@@ -29,16 +29,8 @@
 							<td><input type="hidden" name="id_match_championnat" value="{$match.id_match_championnat}" /><input type="submit" name="afficher_calendrier" value="modifier" /></td>
 						</form>
 					</tr>
-					<tr>
-					    <td></td>
-					    <td></td>
-					    <td>{$match.arbitre1}, {$match.arbitre2}, {$match.arbitre3}, {$match.arbitre4}, {$match.remplacant}</td>
-					    <td></td>
-					    <td></td>
-					    
-					</tr>
 				</table>
-
+				<p>Arbitres : {$match.arbitre1} | {$match.arbitre2} | {$match.arbitre3} | {$match.arbitre4} | {$match.remplacant}</p>
 		 	</div>
 		</div>
 		{/foreach}

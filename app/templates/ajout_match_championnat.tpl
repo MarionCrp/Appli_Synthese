@@ -9,7 +9,7 @@
 
 	  	<div class="panel panel-default">
 		 	<div class="panel-heading">
-		   		 <h3 class="panel-title">Ajouter des Match</h3>
+		   		 <h3 class="panel-title">Ajouter des Match à {$libelle_champ}</h3>
 		  	</div>
 
 		  	<div class="form-group">
@@ -26,4 +26,5 @@
 	  </div> <!-- col-md-8 -->
 	  <div class="col-md-2"></div>
 </div>
+<a href="index.php?page=selection_championnat" class="btn btn-default"> Retour à la page de selection des championnats </a>
 {include file="footer.tpl" title=foo}

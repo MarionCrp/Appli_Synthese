@@ -21,6 +21,8 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 		$division = htmlspecialchars($_SESSION['division']);
 
 		$champ = $championnat_manager->getChampionnat2($saison, $pays, $division);
+		//$libelle_champ = $champ->libelle_championnat();
+
 
 		$message ="";
 		if(isset($_POST['generer_match_aleat'])){
@@ -64,7 +66,7 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 						'id_match_championnat' => $match->id_match_championnat(),
 						'equipe_visiteur' => $equipe_manager->getEquipe($match->id_equipe_visiteur())->libelle_equipe(),
 						'equipe_domicile' => $equipe_manager->getEquipe($match->id_equipe_domicile())->libelle_equipe(),
-						'date_match_championnat' => $match->date_match_championnat(),
+						'date_match_championnat' => date("l, j F Y " ,strtotime($match->date_match_championnat())),
 						'buts_equipe_visiteur' => $score1,
 						'buts_equipe_domicile' => $score2,
 						'arbitre1' => $arbitre1->nom().' '.$arbitre1->prenom(),
@@ -82,6 +84,7 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 				
 			}
 			$smarty->assign("message", $message);
+			
 			$smarty->assign("nb_page", $taille);
 			$smarty->assign("liste_matchs", $liste_matchs);
 			$smarty->display('matchs_championnat.tpl');
@@ -125,7 +128,6 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 			$smarty->assign("matchs", $matchs);
 			$smarty->display('classement.tpl');
 		}
-	
 else {
 	header('Location: selection_championnat_controller.php');
 	}

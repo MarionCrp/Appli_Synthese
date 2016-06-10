@@ -3,7 +3,6 @@ class Random extends Manager{
 
 
 	public function genererDates($object){
-		var_dump($object);
 		$object->id_saison();
 		$saison_manager = new SaisonManager($this->pdo);
 		$saison = $saison_manager->getSaison($object->id_saison());
