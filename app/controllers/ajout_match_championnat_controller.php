@@ -80,8 +80,9 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 			} else {
 				$message = "Classement";
 				$id_champ = $champ->id_championnat();
-				$id_equipe = $equipe->id_equipe();
-				foreach($equipes as $equipe){
+				
+				foreach($equipes as $equipe)
+					$id_equipe = $equipe->id_equipe();
 					$nb_victoires = $equipe_manager->getNbMatchsGagnes($id_equipe, $id_champ);
 					$nb_defaites = $equipe_manager->getNbMatchsPerdus($id_equipe, $id_champ);
 					$nb_egalites = $equipe_manager->getNbMatchsEgalites($id_equipe, $id_champ);
@@ -111,7 +112,7 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 			$smarty->assign("matchs", $matchs);
 			$smarty->display('classement.tpl');
 		}
-	}
+	
 else {
 	header('Location: selection_championnat_controller.php');
 	}
