@@ -40,6 +40,9 @@ if(isset($_GET['page'])) {
 		case 'generer_aleatoirement':
 			$page = 'generer_aleatoirement';
 			break;
+		case 'matchs_championnat':
+			$page = 'matchs_championnat';
+			break;
 		default :
 			$page = '404';
 			break;

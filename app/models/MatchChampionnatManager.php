@@ -32,10 +32,12 @@ class MatchChampionnatManager extends Manager {
 	*
 	* @return array of Arbitre $array_of_arbitres
 	**/
-	public function getAllMatchChampionnats(){
+	public function getAllMatchChampionnats($id_championnat){
 		$array = array();
-		$req = $this->pdo->prepare('SELECT * FROM AS_match_championnat order by id_match_championnat');
-		$req->execute();
+		$req = $this->pdo->prepare('SELECT * FROM AS_match_championnat WHERE id_championnat = :id_championnat order by id_match_championnat');
+		$req->execute(array(
+		'id_championnat' => $id_championnat
+		));
 		while ($data = $req->fetch()){
 			$array[] = new MatchChampionnat([
 				'id_championnat_championnat' => $data['id_match_championnat'],
