@@ -62,8 +62,14 @@ elseif(isset($_SESSION['saison']) && isset($_SESSION['pays']) && isset($_SESSION
 						);
 				}
 				$message = "Liste des Matchs";
+				
+				// Pagination
+				$taille = count($liste_matchs)/20;
+				$liste_matchs = array_slice($liste_matchs, intval($_POST['afficher_calendrier']), 20);
+				
 			}
 			$smarty->assign("message", $message);
+			$smarty->assign("nb_page", $taille);
 			$smarty->assign("liste_matchs", $liste_matchs);
 			$smarty->display('matchs_championnat.tpl');
 		} 
